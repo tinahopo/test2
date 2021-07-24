@@ -60,11 +60,11 @@ Gulp 的自動更新行為是必須持續開著終端機的，因此若關閉終
 部署前請務必先將該 Gulp 原始碼上傳到 GitHub Repositories 也就是初始化 GitHub，因此通常第一步驟會輸入以下指令
 
 ```cmd
-git init # 若已經初始化過就可以不用輸入
+git init            // 若已經初始化過就可以不用輸入
 git add .
 git commit -m 'first commit'
 git remote add origin [GitHub Repositories Url]
-git push -u origin master // 僅限第一次輸入，往後只需要輸入 git push
+git push -u origin master   // 僅限第一次輸入，往後只需要輸入 git push
 ```
 
 當將 Gulp 原始碼初次部署到 GitHub 之後就可以輸入 `gulp build` 進入生產模式，當生產完畢之後接下來只需要輸入 `gulp deploy` 即可完成 GitHub Pages 部署。
